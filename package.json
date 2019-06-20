@@ -1,0 +1,44 @@
+{
+	"name": "@samuelmeuli/tsconfig",
+	"version": "0.0.0",
+	"description": "My TypeScript configuration",
+	"keywords": [
+		"typescript",
+		"config",
+		"tsconfig"
+	],
+	"author": {
+		"name": "Samuel Meuli",
+		"email": "me@samuelmeuli.com",
+		"url": "https://samuelmeuli.com"
+	},
+	"repository": "github:samuelmeuli/tsconfig",
+	"license": "MIT",
+	"files": [
+		"./tsconfig.json"
+	],
+	"main": "./tsconfig.json",
+	"scripts": {
+		"format": "prettier --write"
+	},
+	"devDependencies": {
+		"husky": "^2.4.1",
+		"lint-staged": "^8.2.1",
+		"prettier": "^1.18.2"
+	},
+	"prettier": {
+		"printWidth": 100,
+		"trailingComma": "all"
+	},
+	"lint-staged": {
+		"*.{json,md,yml}": [
+			"yarn format",
+			"git add"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	}
+}
