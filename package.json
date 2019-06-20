@@ -15,9 +15,9 @@
 	"repository": "github:samuelmeuli/tsconfig",
 	"license": "MIT",
 	"files": [
-		"./tsconfig.json"
+		"tsconfig.json"
 	],
-	"main": "./tsconfig.json",
+	"main": "tsconfig.json",
 	"scripts": {
 		"format": "prettier --write",
 		"version": "yarn build",
