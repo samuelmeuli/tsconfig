@@ -19,11 +19,14 @@
 	],
 	"main": "./tsconfig.json",
 	"scripts": {
-		"format": "prettier --write"
+		"format": "prettier --write",
+		"version": "yarn build",
+		"release": "np"
 	},
 	"devDependencies": {
 		"husky": "^2.4.1",
 		"lint-staged": "^8.2.1",
+		"np": "^5.0.3",
 		"prettier": "^1.18.2"
 	},
 	"prettier": {
