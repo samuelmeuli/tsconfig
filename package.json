@@ -20,20 +20,18 @@
 	"main": "tsconfig.json",
 	"scripts": {
 		"format": "prettier --write",
-		"release": "np"
+		"release": "np --no-tests"
 	},
 	"devDependencies": {
-		"husky": "^3.0.7",
-		"lint-staged": "^9.4.0",
-		"np": "~5.0.0",
-		"prettier": "^1.18.2"
+		"@samuelmeuli/prettier-config": "^1.0.0",
+		"husky": "^4.0.7",
+		"lint-staged": "^9.5.0",
+		"np": "^5.2.1",
+		"prettier": "^1.19.1"
 	},
-	"prettier": {
-		"printWidth": 100,
-		"trailingComma": "all"
-	},
+	"prettier": "@samuelmeuli/prettier-config",
 	"lint-staged": {
-		"*.{json,md,yml}": [
+		"*.{css,html,js,json,jsx,md,sass,scss,ts,tsx,vue,yaml,yml}": [
 			"yarn format",
 			"git add"
 		]
