@@ -1,15 +1,24 @@
 {
 	"compilerOptions": {
+		// Modules
 		"target": "ES3",
 		"module": "CommonJS",
 		"moduleResolution": "Node",
 		"esModuleInterop": true,
 		"resolveJsonModule": true,
 
+		// JSX
+		"jsx": "react",
+
+		// JS output
 		"newLine": "lf",
 		"removeComments": true,
 		"sourceMap": true,
 
+		// Log output
+		"pretty": true,
+
+		// Type checking
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitAny": true,
@@ -19,8 +28,6 @@
 		"noUnusedParameters": true,
 		"strictBindCallApply": true,
 		"strictFunctionTypes": true,
-		"strictNullChecks": true,
-
-		"jsx": "react"
+		"strictNullChecks": true
 	}
 }
